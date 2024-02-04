@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sona Template">
+    <meta name="keywords" content="Sona, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Glory-By-Shrida</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/elegant-icons.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+
+    
+    <div id="preloader">
+    <img class="loader" src="static/img/logo.png" alt="Glory Logo" class="loader">
+</div>
+
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="canvas-open">
+        <i class="icon_menu"></i>
+    </div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="icon_close"></i>
+        </div>
+        <div class="search-icon  search-switch">
+            <i class="icon_search"></i>
+        </div>
+        <div class="header-configure-area">
+            <div class="language-option">
+                <img src="{{ url_for('static', filename='img/flag.jpg') }}" alt="">
+
+                <span>IN <i class=""></i></span>
+            </div>
+            <a href="#" class="bk-btn">Booking Now</a>
+        </div>
+        <nav class="mainmenu mobile-menu">
+                  <ul>
+                                    <li><a href="{{ url_for('home') }}">Glory</a></li>
+                                    <li><a href="{{ url_for('rooms') }}">Rooms</a></li>
+                                    <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+                                    <li><a href="{{ url_for('pages') }}">Pages <i class="fa fa-chevron-down" style="color: #7F5D43;"></i></a>
+                                        <ul class="dropdown">
+                        <li><a href="{{ url_for('room_details') }}">Room Details</a></li>
+                                            <li><a href="{{ url_for('blog') }}">Blogs</a></li>
+                                            <li><a href="#">Wedding Gallery</a></li>
+                                            <li><a href="#">Premium Room</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{{ url_for('blog') }}">Blogs</a></li>
+                                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+
+                                </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="top-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="https://wa.me/919300066044" target="_blank"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/glorybyshrida/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3"><i class="fa fa-instagram"></i></a>
+        </div>
+        <ul class="top-widget">
+            <li><i class="fa fa-phone"></i> (+91) 93000-66044</li>
+            <li><i class="fa fa-envelope"></i> info@glorybyshrida.com</li>
+        </ul>
+    </div>
+    <!-- Offcanvas Menu Section End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="tn-left">
+                            <li><i class="fa fa-phone"></i> (+91) 93000-66044</li>
+                            <li><i class="fa fa-envelope"></i> info@glorybyshrida.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tn-right">
+                                    <div class="top-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="https://wa.me/919300066044" target="_blank"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/glorybyshrida/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3"><i class="fa fa-instagram"></i></a>
+        </div>
+                            <a href="#" class="bk-btn">Booking Now</a>
+                            <div class="language-option">
+                                <img src="static/img/flag.jpg" alt="">
+                                <span>IN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="{{ url_for('home') }}"><img src="static/img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="nav-menu">
+                            <nav class="mainmenu">
+                                <ul>
+                                    <li><a href="{{ url_for('home') }}">Glory</a></li>
+                                    <li><a href="{{ url_for('rooms') }}">Rooms</a></li>
+                                    <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+                                    <li><a href="{{ url_for('pages') }}">Pages <i class="fa fa-chevron-down" style="color: #7F5D43;"></i></a>
+                                        <ul class="dropdown">
+                        <li><a href="{{ url_for('room_details') }}">Room Details</a></li>
+                                            <li><a href="{{ url_for('blog') }}">Blogs</a></li>
+                                            <li><a href="#">Wedding at Glory</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{{ url_for('blog') }}">Blogs</a></li>
+                                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+
+                                </ul>
+                            </nav>
+                            <div class="nav-right search-switch">
+                                <i class="icon_search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+<!-- Hero Section Begin -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="hero-text">
+                        <h1>Glow With Glory</h1>
+                        <p>Celebrate your love story in a dreamlike setting at glory, designed for perfection.</p>
+                        <a href="#" class="primary-btn">Discover Now</a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
+                    <div class="booking-form">
+                        <h3>Book Your Visit</h3>
+<form action="{{ url_for('submit') }}" method="post" autocomplete="off">
+
+    <!-- Full Name and Email ID -->
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="full-name">Full Name:</label>
+            <input type="text" class="form-control" id="full-name" name="full-name" required>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="email">Email ID:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+    </div>
+
+    <!-- Mobile Number and Date-Time Section -->
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="mobileNumber">Mobile Number:</label>
+            <div class="input-group">
+<div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1" style="background-color: #7F5D43; color: white;">+91</span>
+</div>
+
+                <input type="tel" id="mobileNumber" name="mobileNumber" class="form-control" placeholder=" " required>
+            </div>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="datetime">Date and time:</label>
+            <input type="datetime-local" class="form-control" id="datetime" name="datetime" required>
+        </div>
+    </div>
+    
+<div id="success-message" style="display: {% if success_message %}block{% else %}none{% endif %};">
+    {{ success_message }}
+</div>
+
+
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary">Book Visit</button>
+</form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slider owl-carousel">
+            <div class="hs-item set-bg" data-setbg="static/img/hero/DJI_0275.png"></div>
+            <div class="hs-item set-bg" data-setbg="static/img/hero/hero-2.jpg"></div>
+            <div class="hs-item set-bg" data-setbg="static/img/hero/hero-3.jpg"></div>
+        </div>
+{% with messages = get_flashed_messages() %}
+<div style="display: {% if messages %}block{% else %}none{% endif %};">
+    {% if messages %}
+    {{ messages[0] }}
+    {% endif %}
+</div>
+{% endwith %}
+
+
+    </section>
+<!-- Hero Section End -->
+
+
+
+    <!-- About Us Section Begin -->
+    <section class="aboutus-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <span>About Us</span>
+                            <h2>Create Forever<br /> In Dreamland.</h2>
+                        </div>
+                        <p class="f-para">Create forever in dreamland, where every moment becomes an everlasting chapter in your love story. The enchanting ambiance of Glory sets the stage for a celebration that transcends time. Say 'I do' surrounded by beauty, weaving dreams into the fabric of your eternal journey together.</p>
+                        <a href="#" class="primary-btn about-btn">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-pic">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="static/img/about/wedding.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="static/img/about/glory.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section End -->
+
+    <!-- Services Section End -->
+    <section class="services-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span> SERVICE SUITE</span>
+                        <h2>Discover Our Services</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service-item">
+                        <img src="static/img/icons/parking1.png" alt="Parking Icon">
+                        <h4>Valet Parking</h4>
+                        <p>Enjoy hassle-free parking with Glory's valet service, which can handle up to 200 cars</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service-item">
+                        <img src="static/img/icons/waiter1.png" alt="Dinner Icon">
+
+                        <h4>24×7 Assistance</h4>
+                        <p>Rest easy knowing Glory offers 24/7 assistance, so help is just a call away, anytime</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service-item">
+                        <img src="static/img/icons/greens.png" alt="swimming Icon">
+                        <h4>Lush Green Area</h4>
+                        <p>Host your dream wedding and dine in Glory's enchanting lush green area. Nature's backdrop, perfect for celebrations and delightful meals.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service-item">
+                        <img src="static/img/icons/roof1.png" alt="Rooftop Icon">
+                        <h4>Rooftop</h4>
+                        <p>Make every occasion memorable on our rooftop. Whether it's a party, romantic dinner, or simple enjoyment, elevate it here</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service-item">
+                        <img src="static/img/icons/beds1.png" alt="Rooms Icon">
+                        <h4>Prestigious lodging</h4>
+                        <p>Experience top-tier accommodation in Glory's prestigious lodging. Enjoy luxury, comfort, and impeccable service throughout your stay</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service-item">
+                        <img src="static/img/icons/makeupp.png" alt="Rooms Icon">
+                        <h4>Makeup Rooms</h4>
+                        <p>Feel fancy at Glory's makeup room. Pretty lights, nice decorations, and good ambience to make you look great!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Home Room Section Begin -->
+    <section class="hp-room-section">
+        <div class="container-fluid">
+            <div class="hp-room-items">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="hp-room-item set-bg" data-setbg="static/img/room/room-b1.jpg">
+                            <div class="hr-text">
+                                <h3>Double Room</h3>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Size:</td>
+                                            <td>30 ft</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Capacity:</td>
+                                            <td>Max persion 5</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Bed:</td>
+                                            <td>King Beds</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Services:</td>
+                                            <td>Wifi, Television, Bathroom,...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="rooms.html" class="primary-btn">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="hp-room-item set-bg" data-setbg="static/img/room/room-b2.jpg">
+                            <div class="hr-text">
+                                <h3>Premium King Room</h3>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Size:</td>
+                                            <td>30 ft</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Capacity:</td>
+                                            <td>Max persion 5</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Bed:</td>
+                                            <td>King Beds</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Services:</td>
+                                            <td>Wifi, Television, Bathroom,...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="rooms.html" class="primary-btn">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="hp-room-item set-bg" data-setbg="static/img/room/room-b3.jpg">
+                            <div class="hr-text">
+                                <h3>Deluxe Room</h3>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Size:</td>
+                                            <td>30 ft</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Capacity:</td>
+                                            <td>Max persion 5</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Bed:</td>
+                                            <td>King Beds</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Services:</td>
+                                            <td>Wifi, Television, Bathroom,...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="rooms.html" class="primary-btn">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="hp-room-item set-bg" data-setbg="static/img/room/room-b4.jpg">
+                            <div class="hr-text">
+                                <h3>Family Room</h3>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Size:</td>
+                                            <td>30 ft</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Capacity:</td>
+                                            <td>Max persion 5</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Bed:</td>
+                                            <td>King Beds</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Services:</td>
+                                            <td>Wifi, Television, Bathroom,...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="rooms.html" class="primary-btn">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Room Section End -->
+
+    <!-- Testimonial Section Begin -->
+    <section class="testimonial-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Testimonials</span>
+                        <h2>What Customers Say?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="testimonial-slider owl-carousel">
+                        <div class="ts-item">
+                            <p>Had really a wonderful experience , it's a place where my friend celebrate his destination wedding and these people made it unforgettable trip and wedding. Enjoyed a lot. And if I am not telling about food it will not be justice to them. Food quality and the food menu is unbelievable . Thanks Glory resort and team for making this wedding awesome.</p>
+                            <div class="ti-author">
+                                <div class="rating">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star-half_alt"></i>
+                                </div>
+                                <h5> - Dr. Naveen Rana</h5>
+                            </div>
+                            <img src="static/img/logo.png" alt="">
+                        </div>
+                                                <div class="ts-item">
+                            <p>One of the best place in western indore. I was searching place for my friend wedding function i had seen almost  every place in western indore But Glory is amazing one of the best place in indore . Truely a resort with amazing ambience and services. Thanks Glory resort and team for making moments memorable.</p>
+                            <div class="ti-author">
+                                <div class="rating">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star-half_alt"></i>
+                                </div>
+                                <h5> - Ayush Gupta</h5>
+                            </div>
+                            <img src="static/img/logo.png" alt="">
+                        </div>
+                        <div class="ts-item">
+                            <p>The number and luxury of rooms, size of the garden was like perfect. Also the bunglow with extra 5 rooms and swimming pool. So we can have all the different functions of a marriage at the same place.</p>
+                            <div class="ti-author">
+                                <div class="rating">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star-half_alt"></i>
+                                </div>
+                                <h5> - Vaibhav Soni</h5>
+                            </div>
+                            <img src="static/img/logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- Blog Section Begin -->
+    <section class="blog-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>OUR BLOGS</span>
+                        <h2>Our Blog & Event</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-item set-bg" data-setbg="static/img/blog/blog-1.jpg">
+                        <div class="bi-text">
+                            <span class="b-tag">Travel Trip</span>
+                            <h4><a href="{{ url_for('blog_details') }}">Tremblant In Canada</a></h4>
+                            <div class="b-time"><i class="icon_clock_alt"></i> 15th April, 2019</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-item set-bg" data-setbg="static/img/blog/blog-2.jpg">
+                        <div class="bi-text">
+                            <span class="b-tag">Camping</span>
+                            <h4><a href="{{ url_for('blog_details') }}">Choosing A Static Caravan</a></h4>
+                            <div class="b-time"><i class="icon_clock_alt"></i> 15th April, 2019</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-item set-bg" data-setbg="static/img/blog/blog-3.jpg">
+                        <div class="bi-text">
+                            <span class="b-tag">Event</span>
+                            <h4><a href="{{ url_for('blog_details') }}">Copper Canyon</a></h4>
+                            <div class="b-time"><i class="icon_clock_alt"></i> 21th April, 2019</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="blog-item small-size set-bg" data-setbg="static/img/blog/blog-wide.jpg">
+                        <div class="bi-text">
+                            <span class="b-tag">Event</span>
+                            <h4><a href="{{ url_for('blog_details') }}">Trip To Iqaluit In Nunavut A Canadian Arctic City</a></h4>
+                            <div class="b-time"><i class="icon_clock_alt"></i> 08th April, 2019</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-item small-size set-bg" data-setbg="static/img/blog/blog-10.jpg">
+                        <div class="bi-text">
+                            <span class="b-tag">Travel</span>
+                            <h4><a href="{{ url_for('blog_details') }}">Traveling To Barcelona</a></h4>
+                            <div class="b-time"><i class="icon_clock_alt"></i> 12th April, 2019</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-text">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="ft-about">
+                            <div class="logo">
+                                <a href="{{ url_for('home') }}">
+                                    <img src="static/img/logof.png" alt="">
+                                </a>
+                            </div>
+                            <p>We ignite the wanderlust of countless travelers, reaching far and wide.</p>
+                            <div class="fa-social">
+                                <a href="https://www.facebook.com/shridaresort/"><i class="fa fa-facebook"></i></a>
+                                <a href="https://wa.me/919300066044" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                                <a href="https://www.instagram.com/glorybyshrida/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/@shridagreensresort3811"><i class="fa fa-youtube-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-contact">
+                            <h6>Contact Us</h6>
+                            <ul>
+                                <li>(+91) 9300-66044</li>
+                                <li>info@glorybyshrida.com</li>
+                                <li>Cat Road Indore R R CAT ROAD, CAMPUS, near R R CAT, Indore, Madhya Pradesh, 452012</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-newslatter">
+                            <h6>New latest</h6>
+                            <p>Get the latest updates and offers.</p>
+                            <form action="#" class="fn-form">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-option">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="co-text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Shastra Group</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch"><i class="icon_close"></i></div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script>document.addEventListener("DOMContentLoaded", function () {
+    // Hide the loader when the page is fully loaded
+    var preloader = document.getElementById("preloader");
+    preloader.style.display = "none";
+});</script>
+<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery-ui.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.slicknav.js') }}"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+<script>
+    // JavaScript code to hide the success message after 5 seconds
+    setTimeout(function() {
+        document.getElementById("success-message").style.display = "none";
+    }, 5000);
+</script>
+
+</html>
